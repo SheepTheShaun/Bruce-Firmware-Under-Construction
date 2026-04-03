@@ -13,9 +13,7 @@ void _setup_gpio() {
     touch.setRotation(1);
 }
 void _post_setup_gpio() {}
-int getBattery() {
-    return analogRead(BATTERY_PIN);
-}
+int getBattery() { return analogRead(BATTERY_PIN); }
 void _setBrightness(uint8_t brightval) {
     if (brightval > 0) {
         digitalWrite(TFT_BL, HIGH);
@@ -39,14 +37,22 @@ void InputHandler(void) {
     SelPress = false;
     AnyKeyPress = false;
     EscPress = false;
-    if (false) {
+    touchPoint.pressed = false;
+
+    if (touch.touched()) {
         if (!wakeUpScreen()) AnyKeyPress = true;
         else goto END;
+
+        TS_Point t = touch.getPoint();
+        touchPoint.x = t.x;
+        touchPoint.y = t.y;
+        touchPoint.pressed = true;
+        touchHeatMap(touchPoint);
     }
 END:
     if (AnyKeyPress) {
         long tmp = millis();
-        while ((millis() - tmp) < 200 && false);
+        while ((millis() - tmp) < 200 && touch.touched());
     }
 }
 String keyboard(String mytext, int maxSize, String msg) { return mytext; }

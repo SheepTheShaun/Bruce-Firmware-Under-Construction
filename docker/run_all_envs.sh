@@ -15,6 +15,7 @@ DEFAULT_ENVS=(
   m5stack-core4mb
   m5stack-cores3
   esp32-s3-devkitc-1
+  ESP32-DIV-V2-0
   esp32-c5
   CYD-2432S028
   CYD-2USB

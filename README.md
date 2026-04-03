@@ -1,43 +1,43 @@
 ![Bruce Main Menu](./media/pictures/bruce_banner.jpg)
-
+ 
 # :shark: Bruce
-
+ 
 Bruce is a versatile ESP32 firmware that supports a ton of offensive features focusing on facilitating Red Team operations.
 It also supports M5stack and Lilygo products and works great with Cardputer, Sticks, M5Cores, T-Decks and T-Embeds.
-
+ 
 **Check our fully open-source hardware too:** https://bruce.computer/boards
-
+ 
 ## :building_construction: How to install
-
+ 
 ### The easiest way to install Bruce is using our official Web Flasher!
 ### Check out: https://bruce.computer/flasher
-
+ 
 Alternatively, you can download the latest binary from releases or actions and flash locally using esptool.py
 ```sh
 esptool.py --port /dev/ttyACM0 write_flash 0x00000 Bruce-<device>.bin
 ```
-
+ 
 **For m5stack devices**
-
+ 
 If you already use M5Launcher to manage your m5stack device, you can install it with OTA
-
+ 
 Or you can burn it directly from the [m5burner tool](https://docs.m5stack.com/en/download), just search for 'Bruce' (My official builds will be uploaded by "owner" and have photos.) on the device category you want to and click on burn
-
-
+ 
+ 
 ## :keyboard: Discord Server
-
+ 
 Contact us in our [Discord Server](https://discord.gg/WJ9XF9czVT)!
-
+ 
 ## :bookmark_tabs: Wiki
-
+ 
 For more information on each function supported by Bruce, [read our wiki here](https://github.com/pr3y/Bruce/wiki).
 Also, [read our FAQ](https://github.com/pr3y/Bruce/wiki/FAQ)
-
+ 
 ## :computer: List of Features
-
+ 
 <details>
   <summary><h2>WiFi</h2></summary>
-
+ 
 - [x] Connect to WiFi
 - [x] WiFi AP
 - [x] Disconnect WiFi
@@ -65,12 +65,12 @@ Also, [read our FAQ](https://github.com/pr3y/Bruce/wiki/FAQ)
   - [x] Pwngrid spam faces & names
     - [x] [Optional] DoScreen a very long name and face
     - [x] [Optional] Flood uniq peer identifiers
-
+ 
 </details>
-
+ 
 <details>
   <summary><h2>BLE</h2></summary>
-
+ 
 - [X] [BLE Scan](https://github.com/pr3y/Bruce/wiki/BLE#ble-scan)
 - [X] Bad BLE - Run Ducky scripts, similar to [BadUsb](https://github.com/pr3y/Bruce/wiki/Others#badusb)
 - [X] BLE Keyboard - Cardputer and T-Deck Only
@@ -80,11 +80,11 @@ Also, [read our FAQ](https://github.com/pr3y/Bruce/wiki/FAQ)
 - [X] Android Spam
 - [X] Spam All
 </details>
-
-
+ 
+ 
 <details>
   <summary><h2>RF</h2></summary>
-
+ 
 - [x] Scan/Copy
 - [x] [Custom SubGhz](https://github.com/pr3y/Bruce/wiki/RF#replay-payloads-like-flipper)
 - [x] Spectrum
@@ -99,10 +99,10 @@ Also, [read our FAQ](https://github.com/pr3y/Bruce/wiki/FAQ)
     - [X] RF Frequency
 - [x] Replay
 </details>
-
+ 
 <details>
   <summary><h2>RFID</h2></summary>
-
+ 
 - [x] Read tag
 - [x] Read 125kHz
 - [x] Clone tag
@@ -119,10 +119,10 @@ Also, [read our FAQ](https://github.com/pr3y/Bruce/wiki/FAQ)
         - [x] PN532Killer
 - [ ] Emulate tag
 </details>
-
+ 
 <details>
   <summary><h2>IR</h2></summary>
-
+ 
 - [x] TV-B-Gone
 - [x] IR Receiver
 - [x] [Custom IR (NEC, NECext, SIRC, SIRC15, SIRC20, Samsung32, RC5, RC5X, RC6)](https://github.com/pr3y/Bruce/wiki/IR#replay-payloads-like-flipper)
@@ -130,10 +130,10 @@ Also, [read our FAQ](https://github.com/pr3y/Bruce/wiki/FAQ)
     - [X] Ir TX Pin
     - [X] Ir RX Pin
 </details>
-
+ 
 <details>
   <summary><h2>FM</h2></summary>
-
+ 
 - [x] [Broadcast standard](https://github.com/pr3y/Bruce/wiki/FM#play_or_pause_button-broadcast-standard)
 - [x] [Broadcast reserved](https://github.com/pr3y/Bruce/wiki/FM#no_entry_sign-broadcast-rerserved)
 - [x] [Broadcast stop](https://github.com/pr3y/Bruce/wiki/FM#stop_button-broadcast-stop)
@@ -141,24 +141,24 @@ Also, [read our FAQ](https://github.com/pr3y/Bruce/wiki/FAQ)
 - [ ] [Hijack Traffic Announcements](https://github.com/pr3y/Bruce/wiki/FM#car-hijack-ta)
 - [ ] [Config](https://github.com/pr3y/Bruce/wiki/FM#bookmark_tabs-config)
 </details>
-
+ 
 <details>
   <summary><h2>NRF24</h2></summary>
-
+ 
 - [X] [NRF24 Jammer](https://github.com/pr3y/Bruce/wiki/BLE#nrf24-jammer)
 - [X] 2.4G Spectrum
 - [ ] Mousejack
 </details>
-
+ 
 <details>
   <summary><h2>Scripts</h2></summary>
-
+ 
 - [X] [JavaScript Interpreter](https://github.com/pr3y/Bruce/wiki/Interpreter) [Credits to justinknight93](https://github.com/justinknight93/Doolittle)
 </details>
-
+ 
 <details>
   <summary><h2>Others</h2></summary>
-
+ 
 - [X] Mic Spectrum
 - [X] QRCodes
     - [x] Custom
@@ -181,27 +181,27 @@ Also, [read our FAQ](https://github.com/pr3y/Bruce/wiki/FAQ)
 - [x] [iButton](https://github.com/pr3y/Bruce/wiki/Others#ibutton)
 - [x] [LED Control](https://github.com/pr3y/Bruce/wiki/Others#led-control)
 </details>
-
+ 
 <details>
   <summary><h2>Clock</h2></summary>
-
+ 
 - [X] RTC Support
 - [X] NTP time adjust
 - [X] Manual adjust
 </details>
-
+ 
 <details>
   <summary><h2>Connect (ESPNOW)</h2></summary>
-
+ 
 - [X] Send File
 - [X] Receive File
 - [X] Send Commands
 - [X] Receive Commands
 </details>
-
+ 
 <details>
   <summary><h2>Config</h2></summary>
-
+ 
 - [x] Brightness
 - [x] Dim Time
 - [x] Orientation
@@ -211,7 +211,7 @@ Also, [read our FAQ](https://github.com/pr3y/Bruce/wiki/FAQ)
 - [x] Sleep
 - [x] Restart
 </details>
-
+ 
 ## Specific functions per Device, the ones not mentioned here are available to all.
 | Device                  | CC1101    | NRF24    | FM Radio  | PN532     | Mic   | BadUSB    | RGB Led | Speaker   | Fuel Guage | LITE_VERSION |
 | ---                     | :---:     | :---:    | :---:     | :---:     | :---: | :---:     | :---:   | :---:     | :---:      | :---:     |
@@ -231,26 +231,31 @@ Also, [read our FAQ](https://github.com/pr3y/Bruce/wiki/FAQ)
 | [Smoochiee V2](https://www.pcbway.com/project/shareproject/Bruce_PCB_Smoochiee_d6a0284b.html) | :ok:       | :ok:      | :x:       | :ok:       | :x:   | :ok:      | :x:     | :x:       | :x:        | :x:       |
 | [ESP32-C5](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c5/esp32-c5-devkitc-1/user_guide.html) | :ok:       | :ok:      | :x:       | :ok:       | :x:   | :x:      | :x:     | :x:       | :x:        | :x:       |
 | [Bruce RF Reaper](https://www.elecrow.com/bruce-pcb-rf-reaper.html) | :ok:       | :ok:      | :x:       | :x: but w/ ST25R3916 | :x:   | :ok:      | :ok:     | :x:       | :ok:        | :x:       |
-
+| ESP32-DIV v2.0 (ciffertechs) ⚠️ | :construction:³ | :construction:³ | :x: | :x: | :x: | :construction:³ | :construction:³ | :x: | :x: | :x: |
+ 
 ² CYD have a LITE_VERSION version for Launcher Compatibility
 ¹ Core, CYD and StickCs Bad-USB: [here](https://github.com/pr3y/Bruce/wiki/Others#badusb)
-
+³ ESP32-DIV v2.0 Bruce support is currently **in active development** by me. Feature availability is subject to change as the port matures.
+ 
 *LITE_VERSION*: TelNet, SSH, WireGuard, ScanHosts, RawSniffer, Brucegotchi, BLEBacon, BLEScan and Interpreter are NOT available for M5Launcher Compatibility
-
-
+ 
+> **:construction: Work In Progress — ESP32-DIV v2.0**
+> Bruce support for the [ESP32-DIV v2.0] (a modular ESP32-S3 platform featuring an ILI9341 display, NeoPixels, NRF24L01+, CC1101, and IR shield) is currently being implemented by **ciffertechs**. This is a community-driven port; functionality will expand as development progresses. Stay tuned for updates.
+ 
+ 
 ## :sparkles: Why and how does it look?
-
+ 
 Bruce stems from a keen observation within the community focused on devices like Flipper Zero. While these devices offered a glimpse into the world of offensive security, there was a palpable sense that something more could be achieved without being that overpriced, particularly with the robust and modular hardware ecosystem provided by ESP32 Devices, Lilygo and M5Stack products.
-
+ 
 ![Bruce Main Menu](./media/pictures/pic1.png)
 ![Bruce on M5Core](./media/pictures/core.png)
 ![Bruce on Stick](./media/pictures/stick.png)
 ![Bruce on CYD](./media/pictures/cyd.png)
-
+ 
 Other media can be [found here](./media/).
-
+ 
 ## :clap: Acknowledgements
-
+ 
 + [@bmorcelli](https://github.com/bmorcelli) for new core and a bunch of new features, also porting to many devices!
 + [@IncursioHack](https://github.com/IncursioHack) for adding RF and RFID modules features.
 + [@Luidiblu](https://github.com/Luidiblu) for logo and UI design assistance.
@@ -261,9 +266,9 @@ Other media can be [found here](./media/).
 + [@pablonymous]() new RF functions to read RAW Data
 + [Smoochiee]() for Bruce PCB design.
 + [TH3_KR4K3N]() for Stick cplus extender PCB design.
++ [@ciffertechs]() for ongoing work porting Bruce to the ESP32-DIV v2.0 modular platform.
 + Everyone who contributed in some way to the project, thanks :heart:
-
+ 
 ## :construction: Disclaimer
-
+ 
 Bruce is a tool for cyber offensive and red team operations, distributed under the terms of the Affero General Public License (AGPL). It is intended for legal and authorized security testing purposes only. Use of this software for any malicious or unauthorized activities is strictly prohibited. By downloading, installing, or using Bruce, you agree to comply with all applicable laws and regulations. This software is provided free of charge, and we do not accept payments for copies or modifications. The developers of Bruce assume no liability for any misuse of the software. Use at your own risk.
-
